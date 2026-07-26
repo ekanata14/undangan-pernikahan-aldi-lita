@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The Royal Wedding of Umar & Marisa</title>
+    <title>The Royal Wedding of Lita & Aldi</title>
 
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -28,15 +28,15 @@
     <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.29/dist/lenis.min.js"></script>
 
     <style>
-      /* --- Palette Mewah: Putih Tulang, Emas, Biru Royal --- */
+      /* --- Palette Alami: Krem, Sage, Hijau Hutan --- */
       :root {
-        --bg-color: #f8f9fa; /* Off-White / Putih Tulang */
-        --gold-primary: #c5a059;
-        --gold-light: #ebcf87;
-        --gold-dark: #856422;
-        --royal-blue: #1b263b; /* Biru Tua Elegan */
-        --royal-blue-accent: #415a77;
-        --text-color: #334155;
+        --bg-color: #f7f9f4;
+        --sage-primary: #6b8f4e;
+        --sage-light: #a8c480;
+        --sage-dark: #3d5c28;
+        --forest-dark: #1e3519;
+        --forest-mid: #3d6030;
+        --text-color: #3d4a35;
       }
 
       body {
@@ -52,7 +52,7 @@
       h2,
       h3 {
         font-family: "Playfair Display", serif;
-        color: var(--royal-blue);
+        color: var(--forest-dark);
       }
       .font-cinzel {
         font-family: "Cinzel", serif;
@@ -94,7 +94,7 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23C5A059' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%236b8f4e' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
         pointer-events: none;
         z-index: 0;
       }
@@ -107,7 +107,7 @@
         background-size: contain;
         background-repeat: no-repeat;
         opacity: 0.1;
-        filter: sepia(100%) hue-rotate(10deg) saturate(300%);
+        filter: sepia(100%) hue-rotate(95deg) saturate(200%);
         z-index: 1;
       }
 
@@ -116,23 +116,23 @@
         background: rgba(255, 255, 255, 0.85);
         backdrop-filter: blur(12px);
         -webkit-backdrop-filter: blur(12px);
-        border: 1px solid rgba(197, 160, 89, 0.3);
-        box-shadow: 0 10px 40px -10px rgba(27, 38, 59, 0.1);
+        border: 1px solid rgba(107, 143, 78, 0.3);
+        box-shadow: 0 10px 40px -10px rgba(30, 53, 25, 0.1);
         transition: transform 0.4s ease, box-shadow 0.4s ease;
       }
 
       .glass-card:hover {
         transform: translateY(-5px);
-        box-shadow: 0 20px 50px -10px rgba(197, 160, 89, 0.2);
-        border-color: rgba(197, 160, 89, 0.6);
+        box-shadow: 0 20px 50px -10px rgba(107, 143, 78, 0.2);
+        border-color: rgba(107, 143, 78, 0.6);
       }
 
       .btn-gold {
         background: linear-gradient(
           135deg,
-          var(--gold-dark) 0%,
-          var(--gold-primary) 50%,
-          var(--gold-light) 100%
+          var(--sage-dark) 0%,
+          var(--sage-primary) 50%,
+          var(--sage-light) 100%
         );
         color: #fff;
         padding: 14px 35px;
@@ -145,13 +145,13 @@
         position: relative;
         overflow: hidden;
         display: inline-block;
-        box-shadow: 0 5px 15px rgba(197, 160, 89, 0.4);
+        box-shadow: 0 5px 15px rgba(107, 143, 78, 0.4);
         font-size: 0.9rem;
       }
 
       .btn-gold:hover {
         transform: translateY(-3px);
-        box-shadow: 0 10px 25px rgba(197, 160, 89, 0.5);
+        box-shadow: 0 10px 25px rgba(107, 143, 78, 0.5);
       }
 
       /* Music Spinner */
@@ -163,8 +163,8 @@
         height: 45px;
         border-radius: 50%;
         background: #fff;
-        border: 2px solid var(--gold-primary);
-        color: var(--royal-blue);
+        border: 2px solid var(--sage-primary);
+        color: var(--forest-dark);
         display: flex;
         align-items: center;
         justify-content: center;
@@ -185,130 +185,14 @@
 
       /* Cover Screen */
       #cover-screen {
-        background: #f8f9fa;
+        background: #f7f9f4;
         z-index: 10000;
-      }
-
-      /* Gallery Styling */
-      .gallery-item-wrapper {
-        position: relative;
-        border-radius: 12px;
-        overflow: hidden;
-        cursor: pointer;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        transition: all 0.5s ease;
-      }
-      .gallery-item-wrapper:hover {
-        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
-          0 10px 10px -5px rgba(0, 0, 0, 0.04);
-      }
-      .gallery-img {
-        transition: transform 0.7s ease;
-      }
-      .gallery-item-wrapper:hover .gallery-img {
-        transform: scale(1.1);
-      }
-      .gallery-overlay {
-        background: rgba(27, 38, 59, 0.4); /* Royal Blue Tint */
-        opacity: 0;
-        transition: opacity 0.5s;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-      .gallery-item-wrapper:hover .gallery-overlay {
-        opacity: 1;
-      }
-      .gallery-icon {
-        color: #fff;
-        font-size: 2rem;
-        opacity: 0;
-        transform: scale(0.5);
-        transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-      }
-      .gallery-item-wrapper:hover .gallery-icon {
-        opacity: 1;
-        transform: scale(1);
-      }
-      .gallery-border {
-        border: 1px solid transparent;
-        transition: border-color 0.5s;
-      }
-      .gallery-item-wrapper:hover .gallery-border {
-        border-color: rgba(197, 160, 89, 0.8); /* Gold border reveal */
-        border-width: 1.5px;
-        inset: 10px; /* Inner border effect */
-        position: absolute;
-        border-radius: 8px;
-        pointer-events: none;
-      }
-
-      /* Lightbox Styling */
-      #lightbox {
-        backdrop-filter: blur(10px);
-      }
-
-      /* Splash Screen */
-      .splash-text {
-        will-change: opacity, transform;
-      }
-
-      /* Couple Arch Design */
-      .couple-arch-card {
-        background: #fff;
-        border-radius: 15rem 15rem 2rem 2rem; /* Arch shape */
-        padding: 4rem 2rem 3rem;
-        position: relative;
-        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        overflow: hidden;
-      }
-
-      .couple-arch-border {
-        position: absolute;
-        top: 15px;
-        left: 15px;
-        right: 15px;
-        bottom: 15px;
-        border: 2px solid var(--gold-primary);
-        border-radius: 15rem 15rem 1.5rem 1.5rem;
-        pointer-events: none;
-        z-index: 2;
-      }
-
-      .couple-img-container {
-        width: 100%;
-        height: 400px;
-        border-radius: 10rem 10rem 1rem 1rem;
-        overflow: hidden;
-        margin-bottom: 2rem;
-        border: 1px solid rgba(197, 160, 89, 0.2);
-        mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
-        -webkit-mask-image: linear-gradient(
-          to bottom,
-          black 80%,
-          transparent 100%
-        );
-      }
-
-      .couple-img-container img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        transition: transform 1.5s ease;
-      }
-
-      .couple-arch-card:hover .couple-img-container img {
-        transform: scale(1.1);
       }
 
       .couple-name {
         font-family: "Great Vibes", cursive;
         font-size: 3.5rem;
-        color: var(--royal-blue);
+        color: var(--forest-dark);
         line-height: 1.2;
         margin-bottom: 0.5rem;
       }
@@ -329,19 +213,15 @@
           font-size: 1rem;
           padding: 15px 40px;
         }
-        .couple-arch-card {
-          padding: 5rem 3rem 4rem;
-        }
       }
     </style>
   </head>
-  <body class="antialiased selection:bg-yellow-200 selection:text-blue-900">
+  <body class="antialiased selection:bg-green-100 selection:text-green-900">
     <!-- Global Batik Overlay -->
     <div class="batik-overlay"></div>
 
     <!-- AUDIO ELEMENT -->
     <audio id="bg-music" loop>
-      <!-- Menggunakan URL yang valid untuk memastikan musik berjalan -->
       <source src="assets/music/bg-music.mp3" type="audio/mpeg" />
     </audio>
     <div id="music-control" onclick="toggleMusic()">
@@ -351,7 +231,7 @@
     <!-- 0. SPLASH SCREEN -->
     <div
       id="splash-screen"
-      class="fixed inset-0 z-[10001] bg-[#1b263b] flex flex-col items-center justify-center text-center px-4"
+      class="fixed inset-0 z-[10001] bg-[#1e3519] flex flex-col items-center justify-center text-center px-4"
     >
       <div
         class="ornament-corner top-0 left-0 transform -rotate-180 opacity-20"
@@ -360,7 +240,7 @@
 
       <div class="overflow-hidden">
         <p
-          class="font-cinzel text-yellow-500 tracking-[0.4em] text-xs md:text-sm mb-4 opacity-0 splash-text"
+          class="font-cinzel text-green-400 tracking-[0.4em] text-xs md:text-sm mb-4 opacity-0 splash-text"
         >
           THE WEDDING OF
         </p>
@@ -368,9 +248,9 @@
       <h1
         class="font-script text-5xl md:text-7xl text-white mb-2 opacity-0 splash-text"
       >
-        Umar & Marisa
+        Lita & Aldi
       </h1>
-      <div class="w-16 h-px bg-yellow-500 my-4 scale-x-0 splash-line"></div>
+      <div class="w-16 h-px bg-green-400 my-4 scale-x-0 splash-line"></div>
       <p
         class="font-cinzel text-gray-300 tracking-widest text-xs opacity-0 splash-text"
       >
@@ -385,7 +265,7 @@
     >
       <!-- Background Image with Overlay -->
       <img
-        src="assets/images/gallery-01.jpg"
+        src="assets/images/IMG_8276.JPG"
         class="absolute inset-0 w-full h-full object-cover"
         id="cover-bg-img"
         alt="Cover Background"
@@ -400,7 +280,7 @@
         <!-- Top: We Are Getting Married -->
         <div class="mb-4">
           <p
-            class="font-cinzel text-yellow-600 tracking-[0.3em] text-xs md:text-sm uppercase font-bold"
+            class="font-cinzel text-green-700 tracking-[0.3em] text-xs md:text-sm uppercase font-bold"
           >
             We Are Getting Married
           </p>
@@ -408,22 +288,22 @@
 
         <!-- Center: Names -->
         <h1
-          class="font-script text-6xl md:text-8xl text-blue-900 mb-6 drop-shadow-sm leading-tight"
+          class="font-script text-6xl md:text-8xl text-green-900 mb-6 drop-shadow-sm leading-tight"
         >
-          Umar
-          <span class="text-4xl md:text-5xl align-middle mx-2">&</span> Marisa
+          Lita
+          <span class="text-4xl md:text-5xl align-middle mx-2">&</span> Aldi
         </h1>
 
         <!-- Date with Lines -->
         <div
           class="flex items-center justify-center gap-4 w-full max-w-xs mb-10"
         >
-          <div class="h-px bg-yellow-500 w-full"></div>
+          <div class="h-px bg-green-500 w-full"></div>
           <span
             class="font-cinzel text-gray-600 text-lg md:text-xl whitespace-nowrap"
             >17 . 01 . 2026</span
           >
-          <div class="h-px bg-yellow-500 w-full"></div>
+          <div class="h-px bg-green-500 w-full"></div>
         </div>
 
         <!-- Guest Name -->
@@ -432,7 +312,7 @@
             Kepada Yth. Bapak/Ibu/Saudara/i
           </p>
           <h3
-            class="font-script text-2xl md:text-3xl text-blue-900"
+            class="font-script text-2xl md:text-3xl text-green-900"
             id="guest-name"
           >
             Tamu Undangan
@@ -462,35 +342,37 @@
       >
         <div class="parallax-bg" data-speed="0.5">
           <img
-            src="assets/images/gallery-01.jpg"
-            class="w-full h-full object-cover opacity-30"
+            src="assets/images/IMG_8276.JPG"
+            class="w-full h-full object-cover opacity-65"
             alt="Hero BG"
             loading="lazy"
           />
         </div>
+        <!-- Gradient to keep text readable -->
+        <div class="absolute inset-0 bg-gradient-to-b from-transparent via-white/10 to-[#f7f9f4]/75 z-0"></div>
         <div class="relative z-10 px-4 hero-text max-w-4xl mx-auto">
           <div class="mb-4 overflow-hidden">
             <p
-              class="font-cinzel tracking-[0.3em] md:tracking-[0.5em] text-yellow-700 text-xs md:text-base translate-y-10 hero-anim font-bold"
+              class="font-cinzel tracking-[0.3em] md:tracking-[0.5em] text-green-800 text-xs md:text-base translate-y-10 hero-anim font-bold"
             >
               We Are Getting Married
             </p>
           </div>
           <h1
-            class="font-script text-6xl md:text-9xl text-blue-950 mb-4 md:mb-6 drop-shadow-sm translate-y-20 hero-anim leading-tight"
+            class="font-script text-6xl md:text-9xl text-green-950 mb-4 md:mb-6 drop-shadow-sm translate-y-20 hero-anim leading-tight"
           >
-            Umar & Marisa
+            Lita & Aldi
           </h1>
           <div
             class="flex items-center justify-center gap-4 md:gap-6 text-lg md:text-2xl text-gray-600 font-cinzel translate-y-10 hero-anim"
           >
-            <span class="border-b-2 border-yellow-500 w-8 md:w-12 block"></span>
+            <span class="border-b-2 border-green-500 w-8 md:w-12 block"></span>
             <span>17 . 01 . 2026</span>
-            <span class="border-b-2 border-yellow-500 w-8 md:w-12 block"></span>
+            <span class="border-b-2 border-green-500 w-8 md:w-12 block"></span>
           </div>
         </div>
         <div
-          class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce text-yellow-600 opacity-0 fade-in-delay"
+          class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce text-green-700 opacity-0 fade-in-delay"
         >
           <i class="fas fa-chevron-down text-xl md:text-2xl"></i>
         </div>
@@ -511,7 +393,7 @@
               cenderung dan merasa tenteram kepadanya."
             </p>
             <p
-              class="font-cinzel text-yellow-700 text-xs md:text-sm tracking-widest font-bold"
+              class="font-cinzel text-green-800 text-xs md:text-sm tracking-widest font-bold"
             >
               — QS. Ar-Rum: 21 —
             </p>
@@ -519,104 +401,99 @@
         </div>
       </section>
 
+      <!-- CINEMATIC PHOTO BANNER -->
+      <section class="relative overflow-hidden" style="height: 55vh;">
+        <img
+          src="assets/images/IMG_8276.JPG"
+          class="absolute inset-0 w-full h-full object-cover object-top"
+          alt="Lita & Aldi"
+        />
+        <div class="absolute inset-0 bg-gradient-to-b from-[#f7f9f4]/30 via-transparent to-[#1e3519]/70"></div>
+        <div class="absolute inset-0 flex flex-col items-center justify-end pb-12 text-center px-4">
+          <h2 class="font-script text-5xl md:text-7xl text-white drop-shadow-lg leading-tight mb-2">
+            Lita & Aldi
+          </h2>
+          <p class="font-cinzel text-green-200 tracking-[0.35em] text-xs md:text-sm">
+            17 . 01 . 2026
+          </p>
+        </div>
+      </section>
+
       <!-- COUPLE SECTION -->
       <section
-        class="py-24 px-4 relative overflow-hidden bg-slate-50"
+        class="relative overflow-hidden bg-white"
         id="couple-section"
       >
-        <div
-          class="absolute inset-0 opacity-[0.03] pointer-events-none"
-          style="
-            background-image: url('https://www.transparenttextures.com/patterns/cubes.png');
-          "
-        ></div>
+        <div class="flex flex-col md:flex-row min-h-[85vh]">
 
-        <div class="max-w-5xl mx-auto">
-          <div class="text-center mb-12 reveal-up">
-            <p
-              class="font-cinzel text-yellow-600 tracking-[0.3em] text-xs uppercase mb-3"
-            >
-              The Happy Couple
-            </p>
-            <h2 class="font-script text-5xl md:text-6xl text-blue-900">
-              Groom & Bride
-            </h2>
+          <!-- Left: Photo -->
+          <div class="relative w-full md:w-1/2 min-h-[50vh] md:min-h-full overflow-hidden">
+            <img
+              src="assets/images/IMG_8281.JPG"
+              alt="The Couple"
+              class="absolute inset-0 w-full h-full object-cover object-top transition-transform duration-700 hover:scale-105"
+              loading="lazy"
+            />
+            <!-- Soft right-edge fade on desktop -->
+            <div class="hidden md:block absolute inset-y-0 right-0 w-24 bg-gradient-to-r from-transparent to-white pointer-events-none"></div>
           </div>
 
-          <div class="flex justify-center reveal-up">
-            <div
-              class="couple-arch-card w-full max-w-[450px] relative text-center p-6 bg-white shadow-xl rounded-t-[10rem] border border-slate-100"
-            >
-              <div
-                class="couple-arch-border absolute inset-3 border border-yellow-600/30 rounded-t-[9rem] pointer-events-none"
-              ></div>
+          <!-- Right: Names & Bio -->
+          <div class="w-full md:w-1/2 flex items-center justify-center py-16 px-8 md:px-12 lg:px-20 bg-white">
+            <div class="text-center reveal-up max-w-sm w-full">
+              <p class="font-cinzel text-green-700 tracking-[0.3em] text-xs uppercase mb-4">
+                The Happy Couple
+              </p>
+              <h2 class="font-script text-5xl md:text-6xl text-green-900 mb-10">
+                Groom & Bride
+              </h2>
 
-              <div
-                class="couple-img-container mb-8 relative z-10 mx-auto w-full aspect-[3/4] overflow-hidden rounded-t-[9rem]"
-              >
-                <img
-                  src="assets/images/gallery-02.jpg"
-                  alt="The Couple"
-                  class="w-full h-full object-cover hover:scale-105 transition duration-700"
-                  loading="lazy"
-                />
+              <!-- Bride -->
+              <div class="mb-6">
+                <h3 class="couple-name font-script text-4xl text-green-900 mb-1">
+                  Lita Ayu Ariyantika
+                </h3>
+                <p class="couple-desc text-sm text-slate-500 font-cinzel leading-relaxed">
+                  Putri dari <br />
+                  Bpk. ... & Ibu ...
+                </p>
               </div>
 
-              <div class="relative z-10 px-4 pb-6">
-                <div class="mb-6">
-                  <h3
-                    class="couple-name font-script text-3xl text-blue-900 mb-1"
-                  >
-                    Umar Faruk
-                  </h3>
-                  <p
-                    class="couple-desc text-sm text-slate-500 font-cinzel leading-relaxed"
-                  >
-                    Putra ke dua dari <br />
-                    Bpk. Didik & Ibu Maksudah
-                  </p>
-                  <i class="fab fa-instagram text-lg"></i>
-                </div>
-
-                <div
-                  class="flex items-center justify-center gap-4 my-6 opacity-60"
-                >
-                  <div class="h-[1px] w-12 bg-yellow-600"></div>
-                  <span class="font-script text-2xl text-yellow-600">&</span>
-                  <div class="h-[1px] w-12 bg-yellow-600"></div>
-                </div>
-
-                <div class="mb-2">
-                  <h3
-                    class="couple-name font-script text-3xl text-blue-900 mb-1"
-                  >
-                    Marisa Utama
-                  </h3>
-                  <p
-                    class="couple-desc text-sm text-slate-500 font-cinzel leading-relaxed"
-                  >
-                    Putri Pertama dari <br />
-                    Bpk. Judi & Ibu Aminah
-                  </p>
-                  <i class="fab fa-instagram text-lg"></i>
-                </div>
+              <div class="flex items-center justify-center gap-4 my-6 opacity-60">
+                <div class="h-[1px] w-16 bg-green-600"></div>
+                <span class="font-script text-3xl text-green-600">&</span>
+                <div class="h-[1px] w-16 bg-green-600"></div>
               </div>
+
+              <!-- Groom -->
+              <div class="mb-8">
+                <h3 class="couple-name font-script text-4xl text-green-900 mb-1">
+                  Aldi Mardani
+                </h3>
+                <p class="couple-desc text-sm text-slate-500 font-cinzel leading-relaxed">
+                  Putra dari <br />
+                  Bpk. ... & Ibu ...
+                </p>
+              </div>
+
+              <div class="w-16 h-px bg-green-300 mx-auto"></div>
             </div>
           </div>
+
         </div>
       </section>
 
       <!-- EVENTS -->
       <section class="py-24 px-4 relative flex flex-col items-center">
         <div
-          class="absolute top-0 right-0 w-40 h-40 bg-blue-100 rounded-full blur-3xl opacity-50"
+          class="absolute top-0 right-0 w-40 h-40 bg-green-100 rounded-full blur-3xl opacity-50"
         ></div>
         <div
-          class="absolute bottom-0 left-0 w-40 h-40 bg-yellow-100 rounded-full blur-3xl opacity-50"
+          class="absolute bottom-0 left-0 w-40 h-40 bg-green-100 rounded-full blur-3xl opacity-50"
         ></div>
 
         <h2
-          class="text-center text-3xl md:text-5xl font-cinzel text-blue-900 mb-16 reveal-up"
+          class="text-center text-3xl md:text-5xl font-cinzel text-green-900 mb-16 reveal-up"
         >
           Wedding Events
         </h2>
@@ -629,16 +506,16 @@
             class="glass-card p-8 md:p-10 rounded-2xl relative transform transition-all duration-500 hover:shadow-2xl event-card-3d"
           >
             <div
-              class="absolute -top-6 left-8 w-14 h-14 bg-white border-2 border-yellow-500 rounded-full flex items-center justify-center text-xl text-yellow-600 shadow-md"
+              class="absolute -top-6 left-8 w-14 h-14 bg-white border-2 border-green-500 rounded-full flex items-center justify-center text-xl text-green-600 shadow-md"
             >
               <i class="fas fa-file-signature"></i>
             </div>
             <div class="mt-4">
-              <h3 class="font-script text-3xl md:text-4xl text-blue-900 mb-2">
+              <h3 class="font-script text-3xl md:text-4xl text-green-900 mb-2">
                 Akad Nikah
               </h3>
               <p
-                class="text-yellow-600 font-bold uppercase tracking-widest text-xs mb-6"
+                class="text-green-700 font-bold uppercase tracking-widest text-xs mb-6"
               >
                 The Sacred Union
               </p>
@@ -649,10 +526,10 @@
                   class="flex items-center justify-between border-b border-gray-200 pb-2 border-dashed"
                 >
                   <span
-                    ><i class="far fa-calendar mr-2 text-blue-500"></i>
+                    ><i class="far fa-calendar mr-2 text-green-600"></i>
                     Tanggal</span
                   >
-                  <span class="text-blue-900 font-bold text-right"
+                  <span class="text-green-900 font-bold text-right"
                     >Sabtu, 17 Januari 2026</span
                   >
                 </div>
@@ -660,15 +537,15 @@
                   class="flex items-center justify-between border-b border-gray-200 pb-2 border-dashed"
                 >
                   <span
-                    ><i class="far fa-clock mr-2 text-blue-500"></i> Pukul</span
+                    ><i class="far fa-clock mr-2 text-green-600"></i> Pukul</span
                   >
-                  <span class="text-blue-900 font-bold text-right"
+                  <span class="text-green-900 font-bold text-right"
                     >08.00 WITA</span
                   >
                 </div>
                 <div class="pt-2">
                   <span class="block mb-1"
-                    ><i class="fas fa-map-marker-alt mr-2 text-blue-500"></i>
+                    ><i class="fas fa-map-marker-alt mr-2 text-green-600"></i>
                     Lokasi</span
                   >
                   <p
@@ -688,16 +565,16 @@
             style="animation-delay: 0.2s"
           >
             <div
-              class="absolute -top-6 left-8 w-14 h-14 bg-white border-2 border-yellow-500 rounded-full flex items-center justify-center text-xl text-yellow-600 shadow-md"
+              class="absolute -top-6 left-8 w-14 h-14 bg-white border-2 border-green-500 rounded-full flex items-center justify-center text-xl text-green-600 shadow-md"
             >
               <i class="fas fa-glass-cheers"></i>
             </div>
             <div class="mt-4">
-              <h3 class="font-script text-3xl md:text-4xl text-blue-900 mb-2">
+              <h3 class="font-script text-3xl md:text-4xl text-green-900 mb-2">
                 Resepsi
               </h3>
               <p
-                class="text-yellow-600 font-bold uppercase tracking-widest text-xs mb-6"
+                class="text-green-700 font-bold uppercase tracking-widest text-xs mb-6"
               >
                 The Celebration
               </p>
@@ -708,10 +585,10 @@
                   class="flex items-center justify-between border-b border-gray-200 pb-2 border-dashed"
                 >
                   <span
-                    ><i class="far fa-calendar mr-2 text-blue-500"></i>
+                    ><i class="far fa-calendar mr-2 text-green-600"></i>
                     Tanggal</span
                   >
-                  <span class="text-blue-900 font-bold text-right"
+                  <span class="text-green-900 font-bold text-right"
                     >Sabtu, 17 Januari 2026</span
                   >
                 </div>
@@ -719,15 +596,15 @@
                   class="flex items-center justify-between border-b border-gray-200 pb-2 border-dashed"
                 >
                   <span
-                    ><i class="far fa-clock mr-2 text-blue-500"></i> Pukul</span
+                    ><i class="far fa-clock mr-2 text-green-600"></i> Pukul</span
                   >
-                  <span class="text-blue-900 font-bold text-right"
+                  <span class="text-green-900 font-bold text-right"
                     >14.00 - 20.00 WITA</span
                   >
                 </div>
                 <div class="pt-2">
                   <span class="block mb-1"
-                    ><i class="fas fa-map-marker-alt mr-2 text-blue-500"></i>
+                    ><i class="fas fa-map-marker-alt mr-2 text-green-600"></i>
                     Lokasi</span
                   >
                   <p
@@ -753,176 +630,44 @@
         </div>
       </section>
 
-      <!-- GALLERY -->
-      <section class="py-24 bg-white overflow-hidden relative">
-        <div
-          class="absolute top-0 left-0 w-full h-20 bg-gradient-to-b from-slate-50 to-transparent"
-        ></div>
-
-        <div class="max-w-7xl mx-auto px-4">
-          <div class="text-center mb-16">
-            <p
-              class="text-yellow-600 font-cinzel text-xs tracking-[0.3em] uppercase mb-3 reveal-up"
-            >
-              Unforgettable Memories
-            </p>
-            <h2
-              class="text-4xl md:text-6xl font-script text-blue-900 reveal-up"
-            >
-              Captured Moments
-            </h2>
-          </div>
-
-          <!-- Menggunakan Placeholder images dari Unsplash agar terlihat bagus -->
-          <div class="grid grid-cols-2 md:grid-cols-4 gap-4 px-2">
-            <!-- Column 1 -->
-            <div class="space-y-4 gallery-col" data-speed="1.1">
-              <div
-                class="gallery-item-wrapper group"
-                onclick="openLightbox('assets/images/gallery-01.jpg')"
-              >
-                <div class="gallery-overlay absolute inset-0 z-10">
-                  <i class="fas fa-search-plus gallery-icon"></i>
-                </div>
-                <div class="gallery-border z-20"></div>
-                <img
-                  src="assets/images/gallery-01.jpg"
-                  class="w-full h-auto gallery-img rounded-lg"
-                  loading="lazy"
-                />
-              </div>
-              <div
-                class="gallery-item-wrapper group"
-                onclick="openLightbox('assets/images/gallery-02.jpg')"
-              >
-                <div class="gallery-overlay absolute inset-0 z-10">
-                  <i class="fas fa-search-plus gallery-icon"></i>
-                </div>
-                <div class="gallery-border z-20"></div>
-                <img
-                  src="assets/images/gallery-02.jpg"
-                  class="w-full h-auto gallery-img rounded-lg"
-                  loading="lazy"
-                />
-              </div>
-            </div>
-
-            <!-- Column 2 (Offset) -->
-            <div class="space-y-4 gallery-col pt-12" data-speed="0.9">
-              <div
-                class="gallery-item-wrapper group"
-                onclick="openLightbox('assets/images/gallery-03.jpg')"
-              >
-                <div class="gallery-overlay absolute inset-0 z-10">
-                  <i class="fas fa-search-plus gallery-icon"></i>
-                </div>
-                <div class="gallery-border z-20"></div>
-                <img
-                  src="assets/images/gallery-03.jpg"
-                  class="w-full h-auto gallery-img rounded-lg"
-                  loading="lazy"
-                />
-              </div>
-              <div
-                class="gallery-item-wrapper group"
-                onclick="openLightbox('assets/images/gallery-04.jpg')"
-              >
-                <div class="gallery-overlay absolute inset-0 z-10">
-                  <i class="fas fa-search-plus gallery-icon"></i>
-                </div>
-                <div class="gallery-border z-20"></div>
-                <img
-                  src="assets/images/gallery-04.jpg"
-                  class="w-full h-auto gallery-img rounded-lg"
-                  loading="lazy"
-                />
-              </div>
-            </div>
-
-            <!-- Column 3 -->
-            <div class="space-y-4 gallery-col" data-speed="1.2">
-              <div
-                class="gallery-item-wrapper group"
-                onclick="openLightbox('assets/images/gallery-05.jpg')"
-              >
-                <div class="gallery-overlay absolute inset-0 z-10">
-                  <i class="fas fa-search-plus gallery-icon"></i>
-                </div>
-                <div class="gallery-border z-20"></div>
-                <img
-                  src="assets/images/gallery-05.jpg"
-                  class="w-full h-auto gallery-img rounded-lg"
-                  loading="lazy"
-                />
-              </div>
-              <div
-                class="gallery-item-wrapper group"
-                onclick="openLightbox('assets/images/gallery-06.jpg')"
-              >
-                <div class="gallery-overlay absolute inset-0 z-10">
-                  <i class="fas fa-search-plus gallery-icon"></i>
-                </div>
-                <div class="gallery-border z-20"></div>
-                <img
-                  src="assets/images/gallery-06.jpg"
-                  class="w-full h-auto gallery-img rounded-lg"
-                  loading="lazy"
-                />
-              </div>
-            </div>
-
-            <!-- Column 4 (Offset) -->
-            <div class="space-y-4 gallery-col pt-12" data-speed="0.8">
-              <div
-                class="gallery-item-wrapper group"
-                onclick="openLightbox('assets/images/gallery-07.jpg')"
-              >
-                <div class="gallery-overlay absolute inset-0 z-10">
-                  <i class="fas fa-search-plus gallery-icon"></i>
-                </div>
-                <div class="gallery-border z-20"></div>
-                <img
-                  src="assets/images/gallery-07.jpg"
-                  class="w-full h-auto gallery-img rounded-lg"
-                  loading="lazy"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       <!-- PENUTUP / CLOSING -->
       <section
-        class="py-20 px-4 relative flex flex-col items-center bg-slate-50 text-center"
+        class="py-20 px-4 relative flex flex-col items-center text-center overflow-hidden"
       >
-        <div class="max-w-2xl mx-auto reveal-up">
+        <img
+          src="assets/images/IMG_8276.JPG"
+          class="absolute inset-0 w-full h-full object-cover object-center"
+          alt=""
+          aria-hidden="true"
+        />
+        <div class="absolute inset-0 bg-[#1e3519]/78"></div>
+        <div class="relative z-10 max-w-2xl mx-auto reveal-up">
           <p
-            class="font-serif italic text-gray-600 leading-relaxed text-lg mb-8"
+            class="font-serif italic text-white/80 leading-relaxed text-lg mb-8"
           >
             "Merupakan suatu kebahagiaan & kehormatan apabila
             Bapak/Ibu/Saudara/i berkenan hadir dan memberikan doa restu kepada
             kami."
           </p>
 
-          <h3 class="font-script text-3xl md:text-4xl text-blue-900 mb-8">
+          <h3 class="font-script text-3xl md:text-4xl text-white mb-8">
             Wassalamualaikum Wr. Wb
           </h3>
 
           <div class="mt-12">
             <p
-              class="font-cinzel text-xs tracking-widest text-yellow-600 uppercase mb-4"
+              class="font-cinzel text-xs tracking-widest text-green-300 uppercase mb-4"
             >
               Turut Mengundang
             </p>
             <div
-              class="p-6 border border-yellow-500/30 rounded-lg inline-block bg-white shadow-sm"
+              class="p-6 border border-white/20 rounded-lg inline-block bg-white/10 backdrop-blur-sm"
             >
               <p
-                class="font-serif text-gray-800 text-lg md:text-xl font-medium"
+                class="font-serif text-white text-lg md:text-xl font-medium"
               >
                 Bpk. Tri Akhmad Taufiq <br />
-                <span class="text-sm text-gray-500">&</span> <br />
+                <span class="text-sm text-white/60">&</span> <br />
                 Ibu Maksudah Hanif
               </p>
             </div>
@@ -931,11 +676,11 @@
       </section>
 
       <!-- FOOTER -->
-      <footer class="bg-blue-950 py-8 text-center text-white relative z-10">
-        <h2 class="font-script text-3xl md:text-4xl text-yellow-500 mb-2">
-          Umar & Marisa
+      <footer class="bg-[#1a2d14] py-8 text-center text-white relative z-10">
+        <h2 class="font-script text-3xl md:text-4xl text-green-400 mb-2">
+          Lita & Aldi
         </h2>
-        <p class="text-blue-200 text-[10px] tracking-widest uppercase">
+        <p class="text-green-200 text-[10px] tracking-widest uppercase">
           17 . 01 . 2026
         </p>
         <div class="mt-6 text-[10px] text-gray-500">
@@ -943,33 +688,6 @@
         </div>
       </footer>
     </main>
-
-    <!-- LIGHTBOX MODAL -->
-    <div
-      id="lightbox"
-      class="fixed inset-0 z-[99999] bg-black/95 hidden flex justify-center items-center opacity-0 transition-opacity duration-300"
-      onclick="closeLightbox()"
-    >
-      <button
-        class="absolute top-4 right-4 text-white/70 hover:text-white text-5xl font-light transition z-50"
-      >
-        &times;
-      </button>
-      <div
-        class="relative max-w-4xl max-h-screen p-4 flex justify-center items-center"
-      >
-        <img
-          id="lightbox-img"
-          src=""
-          class="max-h-[90vh] max-w-full object-contain rounded shadow-2xl border-4 border-yellow-600/30 transform scale-90 transition-transform duration-300"
-        />
-        <div
-          class="absolute bottom-[-40px] text-white/50 text-sm tracking-widest uppercase font-cinzel"
-        >
-          Umar & Marisa Wedding Gallery
-        </div>
-      </div>
-    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.umd.min.js"></script>
     <!-- SCRIPTS -->
@@ -1037,7 +755,6 @@
         const music = document.getElementById("bg-music");
         const icon = document.querySelector("#music-control i");
 
-        // Memutar musik saat interaksi (klik) diizinkan oleh browser
         music.muted = false;
         music
           .play()
@@ -1052,7 +769,6 @@
         // --- 2. Animation Logic (Membuka Cover) ---
         const tl = gsap.timeline();
 
-        // Animasi elemen cover keluar
         tl.to(
           "#cover-screen .relative > *",
           { y: -30, opacity: 0, duration: 0.8, stagger: 0.1 },
@@ -1067,7 +783,6 @@
               duration: 1.2,
               ease: "power4.inOut",
               onComplete: () => {
-                // Tampilkan konten utama dan mulai scroll animations
                 document
                   .getElementById("main-content")
                   .classList.remove("hidden");
@@ -1124,48 +839,9 @@
             scrollTrigger: { trigger: card, start: "top 90%" },
           });
         });
-
-        // Gallery Columns
-        gsap.utils.toArray(".gallery-col").forEach((col, i) => {
-          const speed = col.getAttribute("data-speed") || 1;
-          gsap.to(col, {
-            y: -30 * speed,
-            ease: "none",
-            scrollTrigger: {
-              trigger: col,
-              start: "top bottom",
-              end: "bottom top",
-              scrub: 1,
-            },
-          });
-        });
       }
 
-      // 4. LIGHTBOX LOGIC
-      function openLightbox(src) {
-        const lightbox = document.getElementById("lightbox");
-        const img = document.getElementById("lightbox-img");
-        img.src = src;
-        lightbox.classList.remove("hidden");
-        setTimeout(() => {
-          lightbox.classList.remove("opacity-0");
-          img.classList.remove("scale-90");
-          img.classList.add("scale-100");
-        }, 10);
-      }
-
-      function closeLightbox() {
-        const lightbox = document.getElementById("lightbox");
-        const img = document.getElementById("lightbox-img");
-        lightbox.classList.add("opacity-0");
-        img.classList.remove("scale-100");
-        img.classList.add("scale-90");
-        setTimeout(() => {
-          lightbox.classList.add("hidden");
-        }, 300);
-      }
-
-      // 5. UTILS
+      // 4. UTILS
       document.addEventListener("DOMContentLoaded", function () {
         const urlParams = new URLSearchParams(window.location.search);
         const guestName = urlParams.get("to");
@@ -1175,7 +851,6 @@
         }
       });
 
-      // Variabel status musik, default dianggap playing setelah dibuka
       let isMusicPlaying = true;
 
       function toggleMusic() {
@@ -1194,4 +869,3 @@
     </script>
   </body>
 </html>
-"
