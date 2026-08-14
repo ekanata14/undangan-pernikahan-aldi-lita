@@ -30,11 +30,6 @@ h3 {
 .font-script {
   font-family: "Great Vibes", cursive;
 }
-/* Clearer capital initial for names (blended, slightly different from Great Vibes) */
-.name-cap {
-  font-family: "Dancing Script", cursive;
-  font-weight: 700;
-}
 /* Smaller ornate initial, same script style */
 .cap-sm {
   font-size: 0.7em;
